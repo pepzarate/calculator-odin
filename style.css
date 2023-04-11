@@ -1,0 +1,82 @@
+:root {
+	--main-color: #1f2937;
+	--blue: #3882f6;
+	--font: "Roboto";
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+}
+/* Globals */
+html {
+	font-size: 62.5%;
+}
+body {
+	height: 100%;
+	background-color: var(--main-color);
+	font-family: var(--font);
+	font-size: 1.6rem;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-align: center;
+	color: #fff;
+	font-family: var(--font);
+	overflow-wrap: break-word;
+}
+h1 {
+	font-size: 4rem;
+}
+h2 {
+	font-size: 3.2rem;
+}
+h3 {
+	font-size: 2.4rem;
+}
+a {
+	text-decoration: none;
+}
+p {
+	font-size: 1.8rem;
+	color: var(--main-color);
+	overflow-wrap: break-word;
+}
+.center {
+	text-align: center;
+}
+.container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.white {
+	background-color: white;
+	height: 40vh;
+	width: 300px;
+}
