@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 :root {
 	--main-color: #1f2937;
 	--blue: #3882f6;
@@ -68,10 +69,12 @@ p {
 .center {
 	text-align: center;
 }
+
 .container {
 	height: 100vh;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: space-evenly;
 	align-items: center;
 }
 
@@ -79,7 +82,7 @@ p {
 	background-color: white;
 	height: 60vh;
 	width: 80%;
-	border: #3882f6 solid .4rem;
+	border:var(--blue) solid .4rem;
 	border-radius: 1rem;
 }
 @media (width > 480px ) {
@@ -96,4 +99,41 @@ p {
 	.white-calculator {
 		width: 20%;
 	}
+}
+
+.screen-numbers{
+	width: 100%;
+	border: none;
+	text-align: right;
+	border-radius: 1rem;
+}
+.screen-numbers.help{
+	height: 7%;
+	font-size: 1.6rem;
+	color: var(--main-color);
+}
+.screen-numbers.result{
+	height: 13%;
+	font-size: 4.8rem;
+	color: var(--main-color);
+	font-weight: bold;
+}
+
+.buttons-area{
+	height: 80%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: .5fr repeat(4, 1fr);
+	gap: .2rem;
+}
+
+button {
+	background-color: #fff;
+	font-size: 2.5rem;
+	border-radius: 0.5rem;
+	border: thin #1f2937 0.01rem;
+}
+
+.result-button{
+	background-color: var(--blue);
 }
